@@ -11,7 +11,6 @@ export default function useFetch(fetchPath, query = "") {
             try {
                 setLoading(true);
                 const { data } = await axios.get(`${fetchPath}?${query}`);
-                console.log(data);
                 setAllData(data);
 
             } catch (err) {

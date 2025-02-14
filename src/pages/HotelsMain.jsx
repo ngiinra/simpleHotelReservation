@@ -1,21 +1,20 @@
-import { Outlet, useSearchParams } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { useEffect, useRef } from "react";
-import { HotelsProvider } from "../context/HotelsProvider";
+import {useHotels } from "../context/HotelsProvider";
 import Map from "../components/Map";
 
 export default function HotelsMain() {
     const scrollRef = useRef(null);
     useEffect(() => scrollRef.current.scrollIntoView(), []);
+    const { allData } = useHotels();
     return (
-        <HotelsProvider>
-            <div className="hotelsMain">
-                <div className="hotelsList-content" ref={scrollRef}>
-                    <Outlet />
-                </div>
-                <div className='hotelsMap'>
-                    <Map />
-                </div>
+        <div className="hotelsMain">
+            <div className="hotelsList-content" ref={scrollRef}>
+                <Outlet />
             </div>
-        </HotelsProvider>
+            <div className='hotelsMap'>
+                <Map markers={allData}/>
+            </div>
+        </div>
     );
 }

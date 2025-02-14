@@ -1,9 +1,9 @@
 import useFetch from "../customHooks/useFetch";
-import Loader from "./Loader";
+import { Loader } from 'rsuite';
 export default function AllLocations(){
     const {allData, isLoading}= useFetch("http://localhost:5000/hotels");
 
-    if (isLoading) return <Loader/>;
+    if (isLoading) return <Loader content="loading..."/>;
     return (
         <div className="locations">
             {allData.map(data=> {

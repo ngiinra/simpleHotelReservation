@@ -155,9 +155,11 @@ a.active{
   width: 100%;
 }
 .hotelsList-content{
-  min-width: 50%;
+  width: 50%;
+}
+.BookmarkList{
   overflow: auto;
-  height: 100%;
+  height: 30rem;
 }
 .hotelsMap{
   min-width: 50%;
@@ -175,12 +177,12 @@ a.active{
   left: 20px;
   padding: 10px;
   z-index: 500;
-  background-color: rgb(81, 81, 214);
+  background-color: rgb(5, 142, 5);
   border-radius: 5px;
   width: 13rem;
 }
 .mapNearbyBtn:hover{
-  background-color: rgba(0, 0, 255, 0.258);
+  background-color: rgb(2, 82, 2);
   font-weight: bolder;
 }
 /*end of hotels main page*/
@@ -191,13 +193,14 @@ a.active{
 .hotel-min-card{
   display: flex;
   flex-direction: row;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   margin: 1rem 1rem;
   padding: 1rem;
-  height: 25vh;
+  height: 20vh;
   overflow: hidden;
   text-wrap: wrap;
   font-size: small;
+  border-bottom: 1px solid gray;
 }
 .hotel-min-card:hover{
   box-shadow: 1px -1px 5px 2px gray;
@@ -212,6 +215,123 @@ a.active{
   font-weight: bold;
 }
 /*End of the hotels Component*/
+/*Start of Bookmarks components*/
+.bookmark-min-card{
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px 5px 0 0;
+  margin: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
+  text-wrap: wrap;
+  font-size: small;
+  border-bottom: 1px solid gray;
+}
+.bookmark-min-card:hover{
+  box-shadow: 1px -1px 5px 2px gray;
+}
+/*End of bookmarks components*/
+/*Start of the hotel indivisual view*/
+.hotel-indivisual{
+  display: flex;
+  flex-direction:column;
+  border-radius: 2px;
+  margin: 1rem 0.5rem;
+  padding: 1rem;
+  max-width: 45vw;
+  overflow: hidden;
+  text-wrap: wrap;
+  font-size: small;
+  box-shadow: 10px -10px 5px 0 rgba(90, 109, 90, 0.7);
+}
+.hotel-indivisual img{
+  height: 30vh;
+  margin: 0 auto;
+  border-radius: 10px;
+  object-fit:cover;
+}
+/*End of the hotel indivisual view*/
+.return-btn{
+  border: 1px solid gray;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem 3rem;
+  margin: 1rem 0 1rem 2rem;
+  font-weight: bold;
+}
+.return-btn:hover{
+  background-color: rgba(40, 85, 55, 0.7);
+  color: white;
+}
+.no-color-btn{
+  background-color: rgba(255, 255, 255, 0.773);
+  border:0;
+}
+.near-flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.width-60{
+  width:60%;
+  padding: 0.5rem 1rem;
+  align-self: center;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+.errorP{
+  color: rgb(78, 1, 1);
+  background-color: rgb(237, 125, 125);
+  border-radius: 3px;
+  padding: 1rem;
+  margin: 1rem;
+}
+.confirmAlert{
+  position: absolute;
+  padding: 5px;
+  width: 10rem;
+  overflow: hidden;
+  background-color: white;
+  border: 3px solid lightblue;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px gainsboro;
+  z-index: 1000;
+}
+/*Start of add bookmark*/
+.add-bookmark-form{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 1rem;
+  min-width: 30vw;
+  max-width: 35vw;
+  border: 1px solid gray;
+  height: 40vh;
+  border-radius: 3px;
+}
+.add-bookmark-form label{
+  color: green;
+  padding: 0.5rem;
+  width:4rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  display: inline-block;
+}
+.add-bookmark-form input[type="text"]{
+  border: 1px solid gray;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 3px;
+  display: inline-block;
+  width: calc(30vw - 7rem);
+}
+.add-bookmark-form span.flagOn{
+  margin: 1rem;
+}
+/*End of add bookmark*/
+
 @media only screen and (max-width: 600px) {
   .location{
     flex-basis: 80%;
