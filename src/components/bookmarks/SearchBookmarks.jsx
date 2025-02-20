@@ -18,7 +18,7 @@ function SearchBookmarks() {
                 handleSearch();
             }
             }>جستجو</button>
-            <h2 className="pl-2">founded bookmarks ({bookmarksList.length})</h2>
+            <h2 className="pl-2">founded bookmarks ({bookmarksList?.length})</h2>
         </form>
     )
 }
