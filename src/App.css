@@ -1,4 +1,5 @@
 @import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
+@import "tailwindcss";
 
 /* Navbar component css*/
 .navbar-section{
@@ -27,6 +28,7 @@
   left: 50%;
   width: 70%;
   transform: translate(-50%, -50%);
+  height: max-content;
 }
 .navbar .home{
   padding: 16.5px;

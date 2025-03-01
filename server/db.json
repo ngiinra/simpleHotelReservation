@@ -1334,15 +1334,6 @@
       "id": 14
     },
     {
-      "cityName": "Amsterdamu",
-      "country": "Netherlands (Kingdom of the)",
-      "countryCode": "NL",
-      "latitude": "52.444754152580686",
-      "longitude": "4.763171834653615",
-      "host_location": "Amsterdamu",
-      "id": 18
-    },
-    {
       "cityName": "Pitlochry",
       "country": "United Kingdom of Great Britain and Northern Ireland (the)",
       "countryCode": "GB",
@@ -1397,12 +1388,12 @@
       "id": 27
     },
     {
-      "cityName": "Madrid",
+      "cityName": "Madrid8",
       "country": "Spain",
       "countryCode": "ES",
       "latitude": "40.45175758949523",
       "longitude": "-3.7290893196304813",
-      "host_location": "Madrid",
+      "host_location": "Madrid8",
       "id": 28
     },
     {
@@ -1413,15 +1404,6 @@
       "longitude": "52.522164642872184",
       "host_location": "Shirazz",
       "id": 29
-    },
-    {
-      "cityName": "Mirpur",
-      "country": "Pakistan",
-      "countryCode": "PK",
-      "latitude": "28.4678821200547",
-      "longitude": "67.73817531693497",
-      "host_location": "Mirpur",
-      "id": 30
     },
     {
       "cityName": "baba cot2",
@@ -1440,6 +1422,40 @@
       "longitude": "8.676384922615066",
       "host_location": "Langen",
       "id": 32
+    },
+    {
+      "cityName": "Maidstone",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "countryCode": "GB",
+      "latitude": "51.2011913210016",
+      "longitude": "0.5174160389804962",
+      "host_location": "Maidstone",
+      "id": 33
+    },
+    {
+      "cityName": "Kapoeta",
+      "country": "South Sudan",
+      "countryCode": "SS",
+      "latitude": "5.070021920851528",
+      "longitude": "34.017233294726616",
+      "host_location": "Kapoeta",
+      "id": 34
+    },
+    {
+      "cityName": "Bretigny-sur-Orge",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "48.58546916708604",
+      "longitude": "2.294327968700918",
+      "host_location": "Bretigny-sur-Orge",
+      "id": 35
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "negin",
+      "password": "12345"
     }
   ]
 }
